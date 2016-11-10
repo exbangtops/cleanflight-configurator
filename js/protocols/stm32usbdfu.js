@@ -297,7 +297,7 @@ STM32DFU_protocol.prototype.getFlashInfo = function (_interface, callback) {
                     default:
                         callback({}, -4);
                         return;
-                }
+                
 
                 sectors.push({
                     'num_pages'    : num_pages,
@@ -354,6 +354,7 @@ STM32DFU_protocol.prototype.controlTransfer = function (direction, request, valu
         }
 
         chrome.usb.controlTransfer(this.handle, {
+        }
             'direction':    'out',
             'recipient':    'interface',
             'requestType':  'class',
