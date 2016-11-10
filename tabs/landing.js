@@ -10,7 +10,7 @@ TABS.landing.initialize = function (callback) {
     }
 
     $('#content').load("./tabs/landing.html", function () {
-        // translate to user-selected language
+         translate to user-selected language
         localize();
 
         // load changelog content
